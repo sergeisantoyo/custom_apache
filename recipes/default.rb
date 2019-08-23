@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: custom_apache
+# Cookbook:: custom_apache
 # Recipe:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright:: (c) 2015 The Authors, All Rights Reserved.
 
 #################################################
 # This demonstrates CHEF-4: Some Attribute Methods.
@@ -62,12 +62,12 @@ end
 file '/var/www/html/index.html' do
   owner content_owner
   group content_group
-  mode 0644
+  mode '644'
 end
 
 # Configure the web content directory owner.
 directory '/var/www/html' do
   owner content_owner
   group content_group
-  mode 0755
+  mode '755'
 end
