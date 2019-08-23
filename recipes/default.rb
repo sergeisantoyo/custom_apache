@@ -26,13 +26,7 @@ end
 #################################################
 
 # Install additional Apache packages.
-packages = %w( libapache2-modsecurity libapache2-mod-spamhaus )
-
-packages.each do |p|
-  package 'install libapache2 package' do
-    package_name p
-  end
-end
+package %w( libapache2-modsecurity libapache2-mod-spamhaus )
 
 # Create the group that owns web content.
 group content_group do
