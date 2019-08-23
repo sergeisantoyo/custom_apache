@@ -2,7 +2,7 @@
 # Cookbook:: custom_apache
 # Recipe:: default
 #
-# Copyright:: (c) 2015 The Authors, All Rights Reserved.
+# Copyright (c) 2015-2018 The Authors, All Rights Reserved.
 
 #################################################
 # This demonstrates CHEF-4: Some Attribute Methods.
